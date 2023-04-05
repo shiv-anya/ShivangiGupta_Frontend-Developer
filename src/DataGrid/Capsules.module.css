@@ -1,0 +1,4 @@
+.capsules{
+    display: flex;
+    flex-wrap: wrap;
+}
