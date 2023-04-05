@@ -1,7 +1,11 @@
+import Banner from "./Banner/Banner";
+import DataGrid from "./DataGrid/DataGrid";
+
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <Banner />
+      <DataGrid />
     </div>
   );
 }
