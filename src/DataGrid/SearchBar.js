@@ -1,12 +1,18 @@
 import classes from "./SearchBar.module.css";
 import { useRef } from "react";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   const statusInputRef = useRef();
   const serialInputRef = useRef();
   const typeInputRef = useRef();
-  const changeCapsulesHandler = (e) => {
+  const changeCapsulesHandler = (e, data) => {
     e.preventDefault();
+    const capsuleNewData = {
+      serial: serialInputRef.current.value,
+      status: statusInputRef.current.value,
+      type: typeInputRef.current.value,
+    };
+    props.onChangeCapsules(capsuleNewData);
   };
   return (
     <section>
@@ -19,12 +25,13 @@ const SearchBar = () => {
           />
           <input type="text" placeholder="Search by type" ref={typeInputRef} />
           <select ref={statusInputRef}>
+            <option value="all">All</option>
             <option value="retired">Retired</option>
             <option value="active">Active</option>
             <option value="unknown">Unknown</option>
             <option value="destroyed">Destroyed</option>
           </select>
-          <button>Search</button>
+          <button type="submit">Search</button>
         </form>
       </div>
     </section>
