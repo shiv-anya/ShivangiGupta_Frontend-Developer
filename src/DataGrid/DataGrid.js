@@ -17,13 +17,13 @@ const DataGrid = () => {
       });
   }, []);
   const changeCapsuleDataHandler = (newData) => {
+    let capsuleNewData;
     if (newData.status === "all") {
-      setCapsules(allCapsules);
-      return;
-    }
-    let capsuleNewData = [...allCapsules].filter(
-      (capsule) => capsule.status === newData.status
-    );
+      capsuleNewData = [...allCapsules];
+    } else
+      capsuleNewData = [...allCapsules].filter(
+        (capsule) => capsule.status === newData.status
+      );
     if (newData.type.toLowerCase().length !== 0)
       capsuleNewData = capsuleNewData.filter(
         (capsule) => capsule.type.toLowerCase() === newData.type.toLowerCase()

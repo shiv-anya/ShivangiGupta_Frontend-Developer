@@ -7,7 +7,7 @@ const Capsule = (props) => {
       <div className={classes.about}>
         <h2>{props.type}</h2>
         <p>{props.serial}</p>
-        <button>{props.status}</button>
+        <p className={classes.status}>{props.status}</p>
       </div>
     </article>
   );
