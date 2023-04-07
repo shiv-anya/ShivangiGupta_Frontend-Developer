@@ -1,0 +1,30 @@
+.pagination{
+    background-color: #fff;
+    height: 50px;
+    width: 150px;
+    margin: 30px auto;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    border: 2px solid #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination ul{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button{
+    border: none;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    border-right: 2px solid #f3f3f3;
+}
+.pagination ul li:first-child{
+    border-left: 2px solid #f3f3f3;
+}
