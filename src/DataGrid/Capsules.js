@@ -16,6 +16,7 @@ const Capsules = (props) => {
   const paginate = (pageNumber, e) => {
     setCurrentPage(pageNumber);
   };
+
   useEffect(() => {}, [currentCapsules]);
   return (
     <Fragment>
@@ -28,6 +29,7 @@ const Capsules = (props) => {
                 status={capsule.status}
                 type={capsule.type}
                 key={capsule.id}
+                capsule={capsule}
               />
             );
           })}
