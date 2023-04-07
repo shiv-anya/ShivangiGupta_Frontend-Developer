@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 const Capsules = (props) => {
   const capsules = props.capsules;
   const [currentPage, setCurrentPage] = useState(1);
-  const [capsulesPerPage, setCapsulesPerPage] = useState(10);
+  const capsulesPerPage = 10;
   const indexOfLastCapsule = currentPage * capsulesPerPage;
   const indexOfFirstCapsule = indexOfLastCapsule - capsulesPerPage;
   const currentCapsules = capsules.slice(
