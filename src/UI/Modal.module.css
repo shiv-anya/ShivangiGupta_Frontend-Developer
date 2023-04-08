@@ -48,13 +48,6 @@
 .info ul{
 list-style: none;
 }
-  @media (min-width: 768px) {
-    .modal {
-      width: 90vw;
-      margin: 0 auto;
-    }
-  }
-  
   @keyframes slide-down {
     from {
       opacity: 0;
@@ -64,4 +57,61 @@ list-style: none;
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 992px) {
+    .backdrop {
+      height: 1000vh;
+    }
+    
+    .modal {
+      width: 130vw;
+      height: 130vh;
+    }
+  .content{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  }  
+  .image{
+      height: 50vh;
+      width: 125vw;
+      border-radius: 14px 14px 0 0;
+  }
+  .info{
+      font-size: 1rem;
+  }
+  .info button{
+      width: 150px;
+      padding: 10px 15px;
+      margin-top: 10px;
+      font-size: 1rem;
+  }
+}
+  @media only screen and (max-width: 600px){
+    .backdrop {
+      height: 1000vh;
+    }
+    
+    .modal {
+      width: 250vw;
+      height: 270vh;
+    }
+  .content{
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  }  
+  .image{
+      height: 100vh;
+      width: 240vw;
+  }
+  .info{
+      font-size: 2.5rem;
+  }
+  .info button{
+      width: 300px;
+      padding: 30px 50px;
+      margin-top: 10px;
+      font-size: 2rem;
+  }
   }

@@ -33,7 +33,6 @@ const DataGrid = () => {
         (capsule) =>
           capsule.serial.toLowerCase() === newData.serial.toLowerCase()
       );
-    console.log(newData.type.toLowerCase());
     setCapsules(capsuleNewData);
   };
   return (

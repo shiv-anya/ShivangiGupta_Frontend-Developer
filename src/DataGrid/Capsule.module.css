@@ -26,3 +26,38 @@
     padding: 10px 20px;
     border-radius: 0 0 20px 20px;
 }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .card{
+        height: 230px;
+        width: 200px;
+        box-shadow: #64646f33 0px 7px 29px 0px;
+        margin: 20px;
+    }
+    .image{
+        height: 150px;
+        width: 200px;
+    }
+    .about{
+        font-size: 12px;
+        height: 50px;
+        margin-top: 1px;
+    }  
+}
+@media only screen and (max-width: 600px){
+    .card{
+        height: 550px;
+        width: 420px;
+        box-shadow: #64646f33 0px 7px 29px 0px;
+        margin: 50px;
+    }
+    .image{
+        height: 400px;
+        width: 430px;
+    }
+    .about{
+        font-size: 30px;
+        height: 50px;
+        margin-top: 1px;
+    }
+}

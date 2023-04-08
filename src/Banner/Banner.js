@@ -14,7 +14,9 @@ const Banner = () => {
           designed to carry both crew and cargo to Earth orbit, the Moon, Mars
           and beyond.
         </p>
-        <button>Get Started</button>
+        <a href="https://www.spacex.com/" target="_blank" rel="noreferrer">
+          Get Started
+        </a>
       </div>
     </header>
   );

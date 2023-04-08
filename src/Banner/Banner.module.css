@@ -17,7 +17,9 @@ header div h1{
 header div p{
     margin-bottom: 30px;
 }
-header div button{
+header div a{
+    text-decoration: none;
+    text-align: center;
     font-size: 1.3rem;
     width: 200px;
     background: none;
@@ -26,7 +28,45 @@ header div button{
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
+    cursor: pointer;
 }
 img{
     height: 150px;
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    header{
+        height: 100vh;
+        width: 1000px;
+    }
+    header div h1{
+        font-size: 2rem;
+    }
+    header div a{
+        font-size: 1rem;
+    }
+    img{
+        height: 100px;
+    }   
+}
+@media only screen and (max-width: 600px){
+    header{
+        height: 900px;
+        width: 1050px;
+    }
+    header div{
+        width: 900px;
+    }
+    header div h1{
+        font-size: 60px;
+    }
+    header div p{
+        font-size: 50px;
+    }
+    header div a{
+        font-size: 40px;
+        width: 500px;
+    }
+    img{
+        height: 200px;
+    }
 }
