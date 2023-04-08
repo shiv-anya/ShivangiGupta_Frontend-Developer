@@ -19,7 +19,7 @@ const ModalOverlay = (props) => {
         <div className={classes.info}>
           <ul>
             {Object.entries(props.capsule).map((t, k) => (
-              <li key={t.id}>{`${t[0]}: ${k}`}</li>
+              <li key={t.id}>{`${t[0]}: ${t[1]}`}</li>
             ))}
           </ul>
           <button onClick={props.onClick}>Close</button>
